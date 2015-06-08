@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{BE683723-4ACC-41CC-BC38-F11403CEF5A6}</ProjectGuid>
+    <ProjectGuid>{38E8A097-BDF1-4464-AD80-FA7D1FCAFF5B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>xmcustom.view.Droid</RootNamespace>
     <AndroidApplication>True</AndroidApplication>
@@ -60,7 +60,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\xm-custom.view\xm-custom.view.csproj">
-      <Project>{F55F2A16-CBE0-40DE-B8E5-AB19D8686C9A}</Project>
+      <Project>{040D31B5-4ED2-4A8E-B8C0-D3CC36FFB36F}</Project>
       <Name>xm-custom.view</Name>
     </ProjectReference>
   </ItemGroup>

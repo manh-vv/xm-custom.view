@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{F55F2A16-CBE0-40DE-B8E5-AB19D8686C9A}</ProjectGuid>
+    <ProjectGuid>{040D31B5-4ED2-4A8E-B8C0-D3CC36FFB36F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>xmcustom.view</RootNamespace>
     <AssemblyName>xm-custom.view</AssemblyName>
@@ -32,6 +32,7 @@
   <ItemGroup>
     <Compile Include="xm-custom.view.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="mvv.app\PopupLayout.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.1.3.3.6323\build\portable-win+net45+wp80+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />
@@ -45,5 +46,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="mvv.app\" />
   </ItemGroup>
 </Project>

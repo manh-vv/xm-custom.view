@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xm-custom.view", "xm-custom.view\xm-custom.view.csproj", "{F55F2A16-CBE0-40DE-B8E5-AB19D8686C9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xm-custom.view", "xm-custom.view\xm-custom.view.csproj", "{040D31B5-4ED2-4A8E-B8C0-D3CC36FFB36F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xm-custom.view.Droid", "Droid\xm-custom.view.Droid.csproj", "{BE683723-4ACC-41CC-BC38-F11403CEF5A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xm-custom.view.Droid", "Droid\xm-custom.view.Droid.csproj", "{38E8A097-BDF1-4464-AD80-FA7D1FCAFF5B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xm-custom.view.UITests", "UITests\xm-custom.view.UITests.csproj", "{2940DE7B-130C-4080-AA7F-051A8F0F48D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xm-custom.view.UITests", "UITests\xm-custom.view.UITests.csproj", "{806F66DD-38AF-4303-9367-236273C97292}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,17 +13,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2940DE7B-130C-4080-AA7F-051A8F0F48D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2940DE7B-130C-4080-AA7F-051A8F0F48D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2940DE7B-130C-4080-AA7F-051A8F0F48D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2940DE7B-130C-4080-AA7F-051A8F0F48D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BE683723-4ACC-41CC-BC38-F11403CEF5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BE683723-4ACC-41CC-BC38-F11403CEF5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BE683723-4ACC-41CC-BC38-F11403CEF5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BE683723-4ACC-41CC-BC38-F11403CEF5A6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F55F2A16-CBE0-40DE-B8E5-AB19D8686C9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F55F2A16-CBE0-40DE-B8E5-AB19D8686C9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F55F2A16-CBE0-40DE-B8E5-AB19D8686C9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F55F2A16-CBE0-40DE-B8E5-AB19D8686C9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{040D31B5-4ED2-4A8E-B8C0-D3CC36FFB36F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{040D31B5-4ED2-4A8E-B8C0-D3CC36FFB36F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{040D31B5-4ED2-4A8E-B8C0-D3CC36FFB36F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{040D31B5-4ED2-4A8E-B8C0-D3CC36FFB36F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E8A097-BDF1-4464-AD80-FA7D1FCAFF5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E8A097-BDF1-4464-AD80-FA7D1FCAFF5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E8A097-BDF1-4464-AD80-FA7D1FCAFF5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E8A097-BDF1-4464-AD80-FA7D1FCAFF5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{806F66DD-38AF-4303-9367-236273C97292}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{806F66DD-38AF-4303-9367-236273C97292}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{806F66DD-38AF-4303-9367-236273C97292}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{806F66DD-38AF-4303-9367-236273C97292}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

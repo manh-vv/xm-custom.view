@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2940DE7B-130C-4080-AA7F-051A8F0F48D3}</ProjectGuid>
+    <ProjectGuid>{806F66DD-38AF-4303-9367-236273C97292}</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>xmcustom.view.UITests</RootNamespace>
     <AssemblyName>xm-custom.view.UITests</AssemblyName>
@@ -38,7 +38,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Droid\xm-custom.view.Droid.csproj">
-      <Project>{BE683723-4ACC-41CC-BC38-F11403CEF5A6}</Project>
+      <Project>{38E8A097-BDF1-4464-AD80-FA7D1FCAFF5B}</Project>
       <Name>xm-custom.view.Droid</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>

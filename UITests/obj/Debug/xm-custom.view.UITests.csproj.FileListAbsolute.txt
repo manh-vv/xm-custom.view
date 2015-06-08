@@ -1,0 +1,8 @@
+F:\WorkingPlace\xamarin_studio\xm-custom.view\UITests\bin\Debug\xm-custom.view.UITests.dll
+F:\WorkingPlace\xamarin_studio\xm-custom.view\UITests\bin\Debug\xm-custom.view.UITests.pdb
+F:\WorkingPlace\xamarin_studio\xm-custom.view\UITests\bin\Debug\nunit.framework.dll
+F:\WorkingPlace\xamarin_studio\xm-custom.view\UITests\bin\Debug\Xamarin.UITest.dll
+F:\WorkingPlace\xamarin_studio\xm-custom.view\UITests\bin\Debug\nunit.framework.xml
+F:\WorkingPlace\xamarin_studio\xm-custom.view\UITests\bin\Debug\Xamarin.UITest.xml
+F:\WorkingPlace\xamarin_studio\xm-custom.view\UITests\obj\Debug\xm-custom.view.UITests.dll
+F:\WorkingPlace\xamarin_studio\xm-custom.view\UITests\obj\Debug\xm-custom.view.UITests.pdb

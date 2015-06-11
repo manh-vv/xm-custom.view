@@ -9,23 +9,34 @@ namespace xmcustom.view
 	{
 		private readonly ContentPage contentPage;
 		private readonly StackLayout _layout;
-		private readonly PopupLayout pl;
+		private readonly MyPopupLayout pl;
 		private readonly Button btn;
 		private readonly ListView lv;
 		private readonly View myPopupContent;
 
 		public App ()
 		{
+
+			this.pl = createPopup ();
+			this.lv = createListView();
+			this.btn = createButton ();
+			this._layout = createLayout();
+			this.myPopupContent = createMyPopupContent ();
+
 			// The root page of your application
 			MainPage = this.contentPage = new ContentPage {
-				Content = this.pl = createPopup()
+				//Content = this.pl = createPopup(),
+				Content = this.myPopupContent,
 			};
 
-            this.pl.Content = this._layout = createLayout();
-			this._layout.Children.Add (this.btn = createButton ());
 
-            this.lv = createListView();
-			this.myPopupContent = createMyPopupContent ();
+
+
+            // this.pl.Content = this._layout = createLayout();
+
+
+			//this._layout.Children.Add (this.btn = createButton ());
+			// this._layout.Children.Add (this.myPopupContent = createMyPopupContent ());
 		}
 
         private StackLayout createLayout()
@@ -41,9 +52,9 @@ namespace xmcustom.view
             return stackLayout;
         }
 
-        private PopupLayout createPopup()
+        private MyPopupLayout createPopup()
         {
-            PopupLayout popup = new PopupLayout()
+            MyPopupLayout popup = new MyPopupLayout()
             {
                 BackgroundColor = Color.Pink.WithLuminosity(0.4),
                 VerticalOptions = LayoutOptions.FillAndExpand,
@@ -59,7 +70,7 @@ namespace xmcustom.view
 				Orientation = StackOrientation.Vertical,
 				WidthRequest = 320,
 				HeightRequest = 240,
-				VerticalOptions = LayoutOptions.StartAndExpand,
+				VerticalOptions = LayoutOptions.EndAndExpand,
 				HorizontalOptions = LayoutOptions.FillAndExpand,
 				Spacing = 4,
 				BackgroundColor = Color.White.WithLuminosity(0.6),
@@ -71,16 +82,36 @@ namespace xmcustom.view
 				},
 			};
 
+			StackLayout horizontalStack = new StackLayout {
+				Orientation = StackOrientation.Horizontal,
+				BackgroundColor = Color.White.WithLuminosity(0.2),
+				//VerticalOptions = LayoutOptions.EndAndExpand,
+			};
+
+			Entry entry = new Entry {
+				HeightRequest = 38,
+				WidthRequest = 120,
+				BackgroundColor = Color.Pink,
+				Text = "HELLO",
+			};
+			this.pl.Content = entry;
+
 			Button button = new Button {
+				HeightRequest = 38,
+				HorizontalOptions = LayoutOptions.FillAndExpand,
 				Text = "OK",
 				BackgroundColor = Color.White.WithSaturation(0.6),
 			};
 
-			button.Clicked += (sender, e) => pl.DismissPopup ();
+			button.Clicked += (sender, e) => {
+				System.Diagnostics.Debug.WriteLine("---- Button OK click show popup");
+				pl.ShowPopup (lv, entry, MyPopupLayout.PopupLocation.Bottom, 0, 0);
+			};
 
-			stackLayout.Children.Add (button);
+			horizontalStack.Children.Add (button);
+			horizontalStack.Children.Add (entry);
 
-
+			stackLayout.Children.Add (horizontalStack);
 
 			return stackLayout;
 		}
@@ -95,8 +126,8 @@ namespace xmcustom.view
 			};
 
 			button.Clicked += (sender, e) => {
+				System.Diagnostics.Debug.WriteLine("---- Button click show popup");
 				pl.ShowPopup(this.lv);
-				this.btn.IsEnabled = false;
 			};
 
 			return button;
@@ -107,7 +138,8 @@ namespace xmcustom.view
 			ListView listView = new ListView {
 				BackgroundColor = Color.Lime.WithSaturation(0.2),
 				WidthRequest = 100,
-				ItemTemplate = new DataTemplate(typeof (TextCell)),
+				HeightRequest = 200,
+				VerticalOptions = LayoutOptions.StartAndExpand,
 			};
 
 			List<string> listItem = new List<string> (12);
@@ -118,7 +150,7 @@ namespace xmcustom.view
 			listView.ItemsSource = listItem;
 
 			listView.ItemTapped += (sender, e) => {
-				System.Diagnostics.Debug.WriteLine("Item is tapped");
+				System.Diagnostics.Debug.WriteLine("---- Item is tapped");
 				this.pl.DismissPopup();
 				this.btn.IsEnabled = true;
 			};

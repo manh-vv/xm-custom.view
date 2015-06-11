@@ -1,6 +1,11 @@
-﻿<Properties StartupItem="Droid\xm-custom.view.Droid.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.192.168.56.101:5555" />
-  <MonoDevelop.Ide.Workbench />
+﻿<Properties StartupItem="Droid\xm-custom.view.Droid.csproj" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="xm-custom.view\mvv.app\MyPopupLayout.cs">
+    <Files>
+      <File FileName="xm-custom.view\xm-custom.view.cs" Line="1" Column="1" />
+      <File FileName="xm-custom.view\mvv.app\MyPopupLayout.cs" Line="133" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

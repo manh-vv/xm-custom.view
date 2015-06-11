@@ -6,3 +6,4 @@ F:\WorkingPlace\xamarin_studio\xm-custom.view\xm-custom.view\bin\Debug\Xamarin.F
 F:\WorkingPlace\xamarin_studio\xm-custom.view\xm-custom.view\bin\Debug\Xamarin.Forms.Xaml.xml
 F:\WorkingPlace\xamarin_studio\xm-custom.view\xm-custom.view\obj\Debug\xm-custom.view.dll
 F:\WorkingPlace\xamarin_studio\xm-custom.view\xm-custom.view\obj\Debug\xm-custom.view.pdb
+F:\WorkingPlace\xamarin_studio\xm-custom.view\xm-custom.view\obj\Debug\xm-custom.view.csprojResolveAssemblyReference.cache
